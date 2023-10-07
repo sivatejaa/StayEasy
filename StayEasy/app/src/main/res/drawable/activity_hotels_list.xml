@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hotels_List">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lavender"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="196dp"
+            android:layout_height="56dp"
+            android:layout_gravity="left"
+
+            app:srcCompat="@drawable/stayeasycropped" />
+    </LinearLayout>
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:orientation="vertical"
+            android:gravity="start"
+            android:padding="16dp"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="310dp"
+                android:layout_height="278dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/hotel1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forest Cove"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Remodeled 2 bed 1 bath apartments in Northridge Apartments. Located next to campus!" />
+
+            <Button
+                android:id="@+id/buttonView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="310dp"
+                android:layout_height="292dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/hotel2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forest Cove"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Remodeled 2 bed 1 bath apartments in Northridge Apartments. Located next to campus!" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="310dp"
+                android:layout_height="292dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/hotel" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forest Cove"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Remodeled 2 bed 1 bath apartments in Northridge Apartments. Located next to campus!" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

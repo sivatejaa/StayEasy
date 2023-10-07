@@ -20,7 +20,7 @@ public class Room_Info extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Room_Info.this, Confirmation.class);
+                Intent intent = new Intent(Room_Info.this, Preview_Info.class);
 
 
                 startActivity(intent);

@@ -1,7 +1,6 @@
 package com.example.stayeasy;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class Personal_Info extends AppCompatActivity {

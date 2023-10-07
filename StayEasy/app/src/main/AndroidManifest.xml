@@ -16,6 +16,9 @@
             android:name=".Personal_Info"
             android:exported="false" />
         <activity
+            android:name=".Room_Info"
+            android:exported="false" />
+        <activity
             android:name=".Hotels_List"
             android:exported="false" />
         <activity

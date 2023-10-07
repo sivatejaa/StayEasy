@@ -45,42 +45,30 @@
         android:id="@+id/textViewRooms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please Enter Number of Rooms"
+        android:hint="Please Enter Number of Rooms"
         android:layout_marginTop="10dp"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
         />
 
     <EditText
         android:id="@+id/textViewCheckin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please Select CheckIn Date"
+        android:hint="Please Select CheckIn Date"
         android:layout_marginTop="10dp"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
         />
 
     <EditText
         android:id="@+id/textViewCheckout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please Select CheckOut Date"
+        android:hint="Please Select CheckOut Date"
         android:layout_marginTop="20dp"
-        android:clickable="false"
-        android:cursorVisible="false"
-        android:focusable="false"
-        android:focusableInTouchMode="false"
         />
     <TextView
         android:id="@+id/textViewPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Price: $100 "
+        android:text="Price: $100 (Pay at Hotel) "
         android:gravity="left"
         android:textSize="20dp"
         android:textStyle="bold"

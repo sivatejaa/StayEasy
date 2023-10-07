@@ -23,7 +23,7 @@ public class LoginTabFragment extends Fragment {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Create an Intent to navigate to another activity
+
                 Intent intent = new Intent(getActivity(), Hotels_List.class);
                 startActivity(intent);
             }

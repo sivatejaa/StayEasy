@@ -17,7 +17,17 @@ public class LoginTabFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login_tab, container, false);
+        Button loginButton = view.findViewById(R.id.login_button);
 
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an Intent to navigate to another activity
+                Intent intent = new Intent(getActivity(), Hotels_List.class);
+                startActivity(intent);
+            }
+        });
         return view;
     }
 }

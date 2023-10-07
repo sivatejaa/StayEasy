@@ -33,7 +33,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
-
             android:orientation="vertical"
             android:gravity="start"
             android:padding="16dp"
@@ -51,7 +50,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Forest Cove"
+                android:text="Holiday Inn"
                 android:layout_gravity="center"/>
 
             <TextView
@@ -59,7 +58,7 @@
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Remodeled 2 bed 1 bath apartments in Northridge Apartments. Located next to campus!" />
+                android:text="5 Hotel Chains with Two-Bedroom Suites You Can Book." />
 
             <Button
                 android:id="@+id/buttonView1"
@@ -79,7 +78,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Forest Cove"
+                android:text="Haytt"
                 android:layout_gravity="center"/>
 
             <TextView
@@ -87,7 +86,7 @@
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Remodeled 2 bed 1 bath apartments in Northridge Apartments. Located next to campus!" />
+                android:text="2 bed 1 bath Super Deluxe Hotel 2 Star Hotel" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -105,7 +104,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Forest Cove"
+                android:text="The Plaza"
                 android:layout_gravity="center"/>
 
             <TextView
@@ -113,7 +112,7 @@
                 android:layout_width="310dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Remodeled 2 bed 1 bath apartments in Northridge Apartments. Located next to campus!" />
+                android:text=" 3 bed 1 bath Hotel 3 Star Hotel with vide range of Facilities" />
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -62,6 +62,17 @@
                 android:text="Login"
                 app:cornerRadius = "30dp"/>
 
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:autoLink="web"
+                android:text="Forgot Password?"
+                android:layout_gravity="right"
+                android:textColor="@color/linkColor" />
         </LinearLayout>
 
     </LinearLayout>

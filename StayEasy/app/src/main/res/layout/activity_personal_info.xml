@@ -44,7 +44,7 @@
         android:layout_marginTop="20dp"
         android:padding="8dp"
         android:hint="Please Enter Full Name"
-        android:inputType="textPassword"
+
         android:drawablePadding="8dp"
         android:background="@drawable/edittext_bkg"/>
 
@@ -79,7 +79,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:padding="8dp"
-        android:inputType="number"
+
         android:drawablePadding="8dp"
         android:background="@drawable/edittext_bkg"
         android:hint="Please Enter Address"/>

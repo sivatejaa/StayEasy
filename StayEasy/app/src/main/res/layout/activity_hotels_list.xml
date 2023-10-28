@@ -6,121 +6,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Hotels_List">
-    <LinearLayout
+
+    <!-- Your other layout elements here -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/lavender"
-        android:gravity="start"
-        android:orientation="horizontal"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent">
+        />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="196dp"
-            android:layout_height="56dp"
-            android:layout_gravity="left"
-
-            app:srcCompat="@drawable/stayeasycropped" />
-    </LinearLayout>
-    <ScrollView
-
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            android:orientation="vertical"
-            android:gravity="start"
-            android:padding="16dp"
-            tools:context=".MainActivity">
-
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="310dp"
-                android:layout_height="278dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/hotel" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Holiday Inn"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="310dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="5 Hotel Chains with Two-Bedroom Suites You Can Book." />
-
-            <Button
-                android:id="@+id/buttonView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Book Now"
-                android:layout_gravity="center"/>
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="310dp"
-                android:layout_height="292dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/hotel1" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Haytt"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="310dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="2 bed 1 bath Super Deluxe Hotel 2 Star Hotel" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Book Now"
-                android:layout_gravity="center"/>
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="310dp"
-                android:layout_height="292dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/hotel2" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="The Plaza"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="310dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text=" 3 bed 1 bath Hotel 3 Star Hotel with vide range of Facilities" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Book Now"
-                android:layout_gravity="center"/>
-        </LinearLayout>
-
-
-    </ScrollView>
+    <!-- Your other layout elements here -->
 
 </LinearLayout>

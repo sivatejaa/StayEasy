@@ -20,7 +20,6 @@
             android:layout_width="196dp"
             android:layout_height="56dp"
             android:layout_gravity="left"
-
             app:srcCompat="@drawable/stayeasycropped" />
     </LinearLayout>
 
@@ -35,77 +34,215 @@
         tools:layout_editor_absoluteX="-27dp"
         tools:layout_editor_absoluteY="111dp" />
 
-    <TextView
-        android:id="@+id/textViewName1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name: "
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="164dp" />
 
-    <TextView
-        android:id="@+id/textViewEmail1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Email: "
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="190dp" />
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="start">
 
-    <TextView
-        android:id="@+id/textViewPhone1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Phone: "
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="227dp" />
+        <TextView
+            android:id="@+id/textViewNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="164dp" />
 
-    <TextView
-        android:id="@+id/textViewAddress1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Address: "
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="261dp" />
+        <TextView
+            android:id="@+id/textViewName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="164dp" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewNumberPeople1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Number of People:"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="295dp" />
 
-    <TextView
-        android:id="@+id/textViewRooms"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Room Type: "
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="336dp" />
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="start">
 
-    <TextView
-        android:id="@+id/textViewCheckin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Checkin Date:"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="376dp" />
+        <TextView
+            android:id="@+id/textViewEmailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="190dp" />
 
-    <TextView
-        android:id="@+id/textViewCheckout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Checkout Date:"
-        tools:layout_editor_absoluteX="-28dp"
-        tools:layout_editor_absoluteY="412dp" />
+        <TextView
+            android:id="@+id/textViewEmail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="example@email.com"
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="190dp" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textViewNOofRooms1"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Number of Rooms: "
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="447dp" />
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone: "
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <TextView
+            android:id="@+id/textViewPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="phone"
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address: "
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <TextView
+            android:id="@+id/textViewAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/RoomType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Type: "
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <TextView
+            android:id="@+id/textViewRoomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Room Type"
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/CheckinDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkin Date: "
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <TextView
+            android:id="@+id/textViewCheckinDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checkin"
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/CheckoutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout Date: "
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <TextView
+            android:id="@+id/textViewCheckoutDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of Rooms:"
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/NoofRooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No of Rooms: "
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+
+        <TextView
+            android:id="@+id/noOfRooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NofR:"
+            android:layout_gravity="center_vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="525dp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textViewPrice1"
@@ -125,6 +262,4 @@
         android:text="Submit"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="542dp" />
-
-
 </LinearLayout>

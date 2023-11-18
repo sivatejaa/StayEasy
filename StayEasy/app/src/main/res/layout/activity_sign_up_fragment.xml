@@ -33,7 +33,7 @@
                 android:id="@+id/signup_sid"
                 android:layout_marginTop="0dp"
                 android:padding="8dp"
-                android:hint="S-ID"
+                android:hint="SSN"
                 android:drawableLeft="@drawable/baseline_id_24dp"
                 android:drawablePadding="8dp"
                 android:background="@drawable/edittext_bkg"/>

@@ -11,6 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.stayeasy.model.Hotel;
 
 import java.util.ArrayList;
@@ -19,9 +21,12 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
     private ArrayList<Hotel> hotels;
     private Context context;
 
+    private DatabaseReference bookingsDatabase;
+
     public HotelAdapter(Context context, ArrayList<Hotel> hotels) {
         this.context = context;
         this.hotels = hotels;
+        this.bookingsDatabase = FirebaseDatabase.getInstance().getReference().child("Bookings");
     }
 
     @NonNull
@@ -44,12 +49,19 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, Personal_Info.class);
+               // saveBookingToDatabase(hotel);
 
                 intent.putExtra("hotelObject", hotel);
 
                 context.startActivity(intent);
             }
         });
+    }
+
+    private void saveBookingToDatabase(Hotel hotel) {
+
+        String bookingId = bookingsDatabase.push().getKey();
+        bookingsDatabase.child(bookingId).setValue(hotel);
     }
 
 

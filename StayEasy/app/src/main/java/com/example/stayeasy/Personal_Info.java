@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.stayeasy.model.Hotel;
+import com.stayeasy.model.PersonalInfo;
 
 public class Personal_Info extends AppCompatActivity {
 
@@ -56,10 +57,10 @@ public class Personal_Info extends AppCompatActivity {
                 }else{
                     Intent roomInfoIntent = new Intent(Personal_Info.this, Room_Info.class);
                     roomInfoIntent.putExtra("hotelObject", hotel);
-                    roomInfoIntent.putExtra("name",name);
-                    roomInfoIntent.putExtra("email",email);
-                    roomInfoIntent.putExtra("phone",phone);
-                    roomInfoIntent.putExtra("address",address);
+                    PersonalInfo personalInfo=new PersonalInfo(name,email,phone,address);
+
+                    roomInfoIntent.putExtra("personalInfo", personalInfo);
+
                     Log.d("hotel.getName()", hotel.getName());
                     startActivity(roomInfoIntent);
                 }

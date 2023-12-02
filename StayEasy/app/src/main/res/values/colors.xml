@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lavender">#8692f7</color>
     <color name="linkColor">#0000FF</color>
+    <color name="redColor">#F44336</color>
 </resources>

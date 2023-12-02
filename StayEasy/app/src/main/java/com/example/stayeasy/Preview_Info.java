@@ -67,7 +67,6 @@ public class Preview_Info extends AppCompatActivity {
                 intent.putExtra("room", room);
 
 
-                //SendMail.sendMail("shivateja.tangella@gmail.com");
                 Log.d("previewInfo123",hotel.getName());
 
 

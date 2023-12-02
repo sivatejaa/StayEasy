@@ -59,19 +59,14 @@ public class SignUpFragment extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Get the user ID
                             String userId = mAuth.getCurrentUser().getUid();
 
-                            // Create a User object with the provided details
                             User user = new User(userId, username, email);
 
-                            // Store user details in the Realtime Database
                             usersDatabase.child(userId).setValue(user);
 
-                            // Sign up success, update UI
                             Toast.makeText(requireContext(), "Signup successful", Toast.LENGTH_SHORT).show();
                         } else {
-                            // If signup fails, display a message to the user.
                             Toast.makeText(requireContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
                         }
                     }

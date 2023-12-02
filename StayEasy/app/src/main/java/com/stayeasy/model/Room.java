@@ -10,7 +10,6 @@ public class Room implements Parcelable {
     private String checkinDate;
     private String checkoutDate;
 
-    // Constructor
     public Room(String selectedRoomType, String numberOfRooms, String checkinDate, String checkoutDate) {
         this.selectedRoomType = selectedRoomType;
         this.numberOfRooms = numberOfRooms;
@@ -18,7 +17,6 @@ public class Room implements Parcelable {
         this.checkoutDate = checkoutDate;
     }
 
-    // Parcelable constructor
     protected Room(Parcel in) {
         selectedRoomType = in.readString();
         numberOfRooms = in.readString();
@@ -26,7 +24,6 @@ public class Room implements Parcelable {
         checkoutDate = in.readString();
     }
 
-    // Parcelable creator
     public static final Creator<Room> CREATOR = new Creator<Room>() {
         @Override
         public Room createFromParcel(Parcel in) {
@@ -39,7 +36,6 @@ public class Room implements Parcelable {
         }
     };
 
-    // Getters and Setters
 
     public String getSelectedRoomType() {
         return selectedRoomType;

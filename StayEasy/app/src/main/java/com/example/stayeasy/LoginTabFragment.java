@@ -56,14 +56,11 @@ public class LoginTabFragment extends Fragment {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if (task.isSuccessful()) {
-                                // Login success, update UI
                                 Toast.makeText(requireContext(), "Login successful", Toast.LENGTH_SHORT).show();
 
-                                // Start the new activity (replace with your desired activity)
                                 Intent intent = new Intent(getActivity(), Hotels_List.class);
                                 startActivity(intent);
                             } else {
-                                // If login fails, display a message to the user.
                                 Toast.makeText(requireContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
                             }
                         }

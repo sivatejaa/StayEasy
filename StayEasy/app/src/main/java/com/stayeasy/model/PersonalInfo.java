@@ -10,7 +10,6 @@ public class PersonalInfo implements Parcelable {
     private String address;
     private String phone;
 
-    // Constructor
     public PersonalInfo(String name, String email, String address, String phone) {
         this.name = name;
         this.email = email;
@@ -18,7 +17,6 @@ public class PersonalInfo implements Parcelable {
         this.phone = phone;
     }
 
-    // Parcelable constructor
     protected PersonalInfo(Parcel in) {
         name = in.readString();
         email = in.readString();
@@ -73,7 +71,6 @@ public class PersonalInfo implements Parcelable {
         this.phone = phone;
     }
 
-    // Parcelable methods
     @Override
     public int describeContents() {
         return 0;

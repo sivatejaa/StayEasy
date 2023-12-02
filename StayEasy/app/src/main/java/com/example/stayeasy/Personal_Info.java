@@ -56,6 +56,7 @@ public class Personal_Info extends AppCompatActivity {
                             .show();
                 }else{
                     Intent roomInfoIntent = new Intent(Personal_Info.this, Room_Info.class);
+
                     roomInfoIntent.putExtra("hotelObject", hotel);
                     PersonalInfo personalInfo=new PersonalInfo(name,email,phone,address);
 

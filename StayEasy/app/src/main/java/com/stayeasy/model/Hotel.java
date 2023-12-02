@@ -22,6 +22,11 @@ public class Hotel implements Parcelable {
     }
 
 
+
+
+
+
+
     public Room getRoomInfo() {
         return roomInfo;
     }

@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -49,7 +50,7 @@ public class Room_Info extends AppCompatActivity {
                 String checkinDate = checkinDateEditText.getText().toString().trim();
                 String checkoutDate = checkoutDateEditText.getText().toString().trim();
 
-              /*  if (selectedRoomType.equals("Select") || numberOfRooms.isEmpty() || checkinDate.isEmpty() || checkoutDate.isEmpty()) {
+                if (selectedRoomType.equals("Select") || numberOfRooms.isEmpty() || checkinDate.isEmpty() || checkoutDate.isEmpty()) {
                     if (selectedRoomType.equals("Select")) {
 
                         showErrorDialog("Please select a room type.");
@@ -57,27 +58,29 @@ public class Room_Info extends AppCompatActivity {
 
                         showErrorDialog("Please enter all the fields.");
                     }
-                }else{*/
-                    Intent intent = new Intent(Room_Info.this, Preview_Info.class);
+                }else{
+                Intent intent = new Intent(Room_Info.this, Preview_Info.class);
 
 
-                    hotel.setSelectedRoomType(selectedRoomType);
-                    hotel.setCheckinDate(checkinDate);
-                    hotel.setNumberOfRooms(numberOfRooms);
-                    hotel.setCheckoutDate(checkoutDate);
+                hotel.setSelectedRoomType(selectedRoomType);
+                hotel.setCheckinDate(checkinDate);
+                hotel.setNumberOfRooms(numberOfRooms);
+                hotel.setCheckoutDate(checkoutDate);
 
-                Room room= new Room(selectedRoomType,numberOfRooms,checkinDate,checkoutDate);
-                    double roomPrice=calculatePrice(hotel);
-                    // hotel.setPrice(roomPrice);
+                Room room = new Room(selectedRoomType, numberOfRooms, checkinDate, checkoutDate);
+                double roomPrice = calculatePrice(hotel);
+                hotel.setPrice(roomPrice);
 
-                   intent.putExtra("hotelObject", hotel);
+                intent.putExtra("hotelObject", hotel);
 
-                    intent.putExtra("personalInfo", personalInfo);
-                   intent.putExtra("room",room);
-                intent.putExtra("roomPrice",roomPrice);
+                intent.putExtra("personalInfo", personalInfo);
+                Log.d("personalInfo.getName()", personalInfo.getName());
+                intent.putExtra("room", room);
+                intent.putExtra("roomPrice", roomPrice);
 
-                    startActivity(intent);
-              //  }
+                startActivity(intent);
+            }
+
 
 
             }

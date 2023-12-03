@@ -10,3 +10,5 @@ Password : 9963411997
 Supported devices : All android devices
 
 Sequence -  Login - List of hotels(Select a hotel)- personal information( Enter all personal information ,Validations provided for Empty values  - Room details (Select the room details , enter no of rooms as a Number ,Date format should be ( 10/10/2023)- Preview (You can see all your entered details) - Confirmation ( can see the confirmation details finally)
+
+All the information will be saved in the database

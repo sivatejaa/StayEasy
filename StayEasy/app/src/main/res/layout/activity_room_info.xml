@@ -58,7 +58,7 @@
         android:id="@+id/textViewRooms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Please Enter Number of Rooms"
+        android:hint="Please Enter Number of Rooms(Eg: 1,2)"
         android:layout_marginTop="10dp"
         />
 
@@ -66,7 +66,7 @@
         android:id="@+id/textViewCheckin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Please Select CheckIn Date"
+        android:hint="Please Select CheckIn Date(MM/DD/YYYY)"
         android:layout_marginTop="10dp"
         />
 
@@ -74,7 +74,7 @@
         android:id="@+id/textViewCheckout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Please Select CheckOut Date"
+        android:hint="Please Select CheckOut Date(MM/DD/YYYY)"
         android:layout_marginTop="20dp"
         />
 

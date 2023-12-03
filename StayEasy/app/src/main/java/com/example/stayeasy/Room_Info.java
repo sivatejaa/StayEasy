@@ -11,7 +11,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.stayeasy.model.Hotel;
 import com.stayeasy.model.PersonalInfo;
 import com.stayeasy.model.Room;
@@ -30,6 +32,14 @@ public class Room_Info extends AppCompatActivity {
         setContentView(R.layout.activity_room_info);
         Button button = findViewById(R.id.button2);
 
+        TextView logoutTextView = findViewById(R.id.logoutId);
+        logoutTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Implement logout functionality here
+                logoutUser();
+            }
+        });
         final Spinner roomTypeSpinner = findViewById(R.id.spinnerType);
         final EditText numberOfRoomsEditText = findViewById(R.id.textViewRooms);
         final EditText checkinDateEditText = findViewById(R.id.textViewCheckin);
@@ -141,5 +151,13 @@ public class Room_Info extends AppCompatActivity {
 
 
 
+    }
+
+    private void logoutUser() {
+
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(Room_Info.this, MainActivity.class);
+        startActivity(intent);
+        finish(); // Close the current activity after logout
     }
 }

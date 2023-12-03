@@ -11,7 +11,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.stayeasy.model.Hotel;
 import com.stayeasy.model.PersonalInfo;
 
@@ -22,6 +24,14 @@ public class Personal_Info extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_info);
 
+        TextView logoutTextView = findViewById(R.id.logoutId);
+        logoutTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Implement logout functionality here
+                logoutUser();
+            }
+        });
         EditText nameEditText= findViewById(R.id.edName);
         EditText emailEditText= findViewById(R.id.edEmail);
         EditText phoneEditText= findViewById(R.id.edPhone);
@@ -30,6 +40,7 @@ public class Personal_Info extends AppCompatActivity {
 
         Intent intent = getIntent();
         Hotel hotel = intent.getParcelableExtra("hotelObject");
+
 
 
 
@@ -58,7 +69,7 @@ public class Personal_Info extends AppCompatActivity {
                     Intent roomInfoIntent = new Intent(Personal_Info.this, Room_Info.class);
 
                     roomInfoIntent.putExtra("hotelObject", hotel);
-                    PersonalInfo personalInfo=new PersonalInfo(name,email,phone,address);
+                    PersonalInfo personalInfo=new PersonalInfo(name,email,address,phone);
 
                     roomInfoIntent.putExtra("personalInfo", personalInfo);
 
@@ -71,5 +82,12 @@ public class Personal_Info extends AppCompatActivity {
 
             }
         });
+    }
+    private void logoutUser() {
+
+        FirebaseAuth.getInstance().signOut();
+        Intent intent = new Intent(Personal_Info.this, MainActivity.class);
+        startActivity(intent);
+        finish(); // Close the current activity after logout
     }
 }

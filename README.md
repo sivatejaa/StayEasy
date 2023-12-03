@@ -5,8 +5,8 @@ Description : The Hotel Reservation App is designed to streamline the process of
 
 Credentials : 
 Username : sivateja.tangella@gmail.com
-Password : 8019859918
+Password : 9963411997
 
 Supported devices : All android devices
 
-Sequence -  Login- List of hotels- personal information - Room details - Preview - Confirmation
+Sequence -  Login - List of hotels(Select a hotel)- personal information( Enter all personal information ,Validations provided for Empty values  - Room details (Select the room details , enter no of rooms as a Number ,Date format should be ( 10/10/2023)- Preview (You can see all your entered details) - Confirmation ( can see the confirmation details finally)

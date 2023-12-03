@@ -19,4 +19,4 @@ Supported devices : All android devices
 
 **All the Hotel,Personal,Room information will be saved in the Firebase database**
 
-Except **Admin profile and Mail notifications** all functionalities were implemented.
+Except **Admin profile** all functionalities were implemented.

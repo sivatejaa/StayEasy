@@ -85,6 +85,7 @@ public class Preview_Info extends AppCompatActivity {
                     hotel.setRoomInfo(room);
                     hotel.setPersonalInfo(personalInfo);
 
+                    hotel.setPrice(price);
                     saveBookingToDatabase(hotel);
 
                     intent.putExtra("hotelObject", hotel);

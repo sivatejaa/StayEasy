@@ -41,7 +41,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
         final Hotel hotel = hotels.get(position);
 
         holder.hotelName.setText(hotel.getName());
-        holder.hotelDescription.setText(hotel.getDescription());
+
         holder.hotelImage.setImageResource(hotel.getImageResource());
 
         Button bookNowButton = holder.itemView.findViewById(R.id.bookNowButton); // Find the button within the item
@@ -49,7 +49,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(context, Personal_Info.class);
-               // saveBookingToDatabase(hotel);
+
 
                 intent.putExtra("hotelObject", hotel);
 
@@ -74,14 +74,13 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.ViewHolder> 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView hotelImage;
         private TextView hotelName;
-        private TextView hotelDescription;
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            hotelImage = itemView.findViewById(R.id.hotelImage); // Replace with your ImageView's ID
-            hotelName = itemView.findViewById(R.id.hotelName); // Replace with your TextView's ID
-            hotelDescription = itemView.findViewById(R.id.hotelDescription); // Replace with your TextView's ID
-        }
+            hotelImage = itemView.findViewById(R.id.hotelImage);
+            hotelName = itemView.findViewById(R.id.hotelName);
+                }
     }
 }
 

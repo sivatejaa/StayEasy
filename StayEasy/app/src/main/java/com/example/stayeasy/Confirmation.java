@@ -10,14 +10,28 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Random;
+
 public class Confirmation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirmation);
+
         TextView logoutTextView = findViewById(R.id.logoutId);
         Button backhome_button = findViewById(R.id.backhome_button);
+
+        TextView confirmationNumberTextView = findViewById(R.id.bookingID);
+
+        String confirmationNumber = generateConfirmationNumber();
+        confirmationNumberTextView.setText("Booking ID: " + confirmationNumber);
+
+
+
         logoutTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,6 +50,17 @@ public class Confirmation extends AppCompatActivity {
             }
         });
 
+    }
+    private String generateConfirmationNumber() {
+
+        String timestamp = new SimpleDateFormat("yyyyMMdd", Locale.getDefault()).format(new Date());
+
+
+        Random random = new Random();
+        int randomNumber = random.nextInt(1000);
+
+
+        return " " +timestamp+  randomNumber;
     }
 
     private void logoutUser() {

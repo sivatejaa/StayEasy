@@ -5,8 +5,7 @@ Description : The Hotel Reservation App is designed to streamline the process of
 
 **Credentials : 
 Username : sivateja.tangella@gmail.com
-Password : 9963411997
-     .**
+Password : 9963411997**
 
 If the above credentials doesnt work you can sign up with your gmail and can login with those credentials.
 Supported devices : All android devices

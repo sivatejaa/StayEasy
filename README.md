@@ -16,8 +16,7 @@ Supported devices : All android devices
             Room details (Select the room details , enter no of rooms as a Number ,Date format should be ( 10/10/2023)-
             Preview (You can see all your entered details)
             Confirmation ( can see the confirmation details finally)
-            
-            Forgot password : if you have forgotten pasword by clicking on forgot passoword you could receive a reset link mail. You can reset your password there.
+            Forgot password- if you have forgotten pasword by clicking on forgot passoword you could receive a reset link mail. You can reset your password there.
 
 **All the Hotel,Personal,Room information will be saved in the Firebase database**
 

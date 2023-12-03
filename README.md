@@ -10,12 +10,12 @@ Password : 9963411997**
 If the above credentials doesnt work you can sign up with your gmail and can login with those credentials.
 Supported devices : All android devices
 **All fields are mandatory** 
-**Sequence** - ``` Login - List of hotels(Select a hotel)-
+**Sequence** - <pre> Login - List of hotels(Select a hotel)-
             personal information( Enter all personal information ,Validations provided for Empty values  -
             Room details (Select the room details , enter no of rooms as a Number ,Date format should be ( 10/10/2023) Hit 2 times for a date picker -
             Preview (You can see all your entered details)
             Confirmation ( can see the confirmation details finally)
-            Forgot password- if you have forgotten pasword by clicking on forgot passoword you could receive a reset link mail. You can reset your password there. ```
+            Forgot password- if you have forgotten pasword by clicking on forgot passoword you could receive a reset link mail. You can reset your password there. </pre>
 
 **All the Hotel,Personal,Room information will be saved in the Firebase database**
 

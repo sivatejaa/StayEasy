@@ -21,8 +21,15 @@ public class Hotel implements Parcelable {
         this.personalInfo = personalInfo;
     }
 
+    public String getConfirmationNumber() {
+        return confirmationNumber;
+    }
 
+    public void setConfirmationNumber(String confirmationNumber) {
+        this.confirmationNumber = confirmationNumber;
+    }
 
+    private String confirmationNumber;
 
 
 

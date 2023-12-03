@@ -2,7 +2,6 @@ package com.example.stayeasy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,9 +15,11 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.stayeasy.model.Hotel;
 import com.stayeasy.model.PersonalInfo;
 import com.stayeasy.model.Room;
-import com.utility.SendMail;
 
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Random;
 
 public class Preview_Info extends AppCompatActivity {
 
@@ -52,8 +53,11 @@ public class Preview_Info extends AppCompatActivity {
         TextView textViewCheckout = findViewById(R.id.textViewCheckoutDate);
         TextView textViewNoofRoom = findViewById(R.id.noOfRooms);
 
+        String confirmationNumber = generateConfirmationNumber();
+
         Intent intent = getIntent();
         Hotel hotel = intent.getParcelableExtra("hotelObject");
+
         PersonalInfo personalInfo=intent.getParcelableExtra("personalInfo");
         Room room=intent.getParcelableExtra("room");
 
@@ -82,6 +86,7 @@ public class Preview_Info extends AppCompatActivity {
                 try {
                     Intent intent = new Intent(Preview_Info.this, Confirmation.class);
 
+                    hotel.setConfirmationNumber(confirmationNumber);
                     hotel.setRoomInfo(room);
                     hotel.setPersonalInfo(personalInfo);
 
@@ -91,8 +96,7 @@ public class Preview_Info extends AppCompatActivity {
                     intent.putExtra("hotelObject", hotel);
                     intent.putExtra("personalInfo", personalInfo);
                     intent.putExtra("room", room);
-
-
+                    intent.putExtra("confirmationNo", confirmationNumber);
                     Log.d("previewInfo123", hotel.getName());
 
 
@@ -118,5 +122,17 @@ public class Preview_Info extends AppCompatActivity {
         Intent intent = new Intent(Preview_Info.this, MainActivity.class);
         startActivity(intent);
         finish(); // Close the current activity after logout
+    }
+
+    private String generateConfirmationNumber() {
+
+        String timestamp = new SimpleDateFormat("yyyyMMdd", Locale.getDefault()).format(new Date());
+
+
+        Random random = new Random();
+        int randomNumber = random.nextInt(1000);
+
+
+        return " " +timestamp+  randomNumber;
     }
 }

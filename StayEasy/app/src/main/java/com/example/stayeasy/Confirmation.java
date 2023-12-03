@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.stayeasy.model.Hotel;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,8 +28,9 @@ public class Confirmation extends AppCompatActivity {
 
         TextView confirmationNumberTextView = findViewById(R.id.bookingID);
 
-        String confirmationNumber = generateConfirmationNumber();
-        confirmationNumberTextView.setText("Booking ID: " + confirmationNumber);
+        Intent intent = getIntent();
+        String confirmNo = intent.getStringExtra("confirmationNo");
+        confirmationNumberTextView.setText("Booking ID: " + confirmNo);
 
 
 
@@ -51,17 +53,7 @@ public class Confirmation extends AppCompatActivity {
         });
 
     }
-    private String generateConfirmationNumber() {
 
-        String timestamp = new SimpleDateFormat("yyyyMMdd", Locale.getDefault()).format(new Date());
-
-
-        Random random = new Random();
-        int randomNumber = random.nextInt(1000);
-
-
-        return " " +timestamp+  randomNumber;
-    }
 
     private void logoutUser() {
 
